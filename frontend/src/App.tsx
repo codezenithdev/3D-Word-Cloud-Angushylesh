@@ -51,10 +51,9 @@ export default function App() {
       <header className="header">
         <h1>3D Word Cloud</h1>
         <p className="subtitle">
-          Milestone 1 (plan): the backend <code>POST /analyze</code> currently
-          returns <strong>stub</strong> keyword data so this UI can call the API
-          end-to-end. The URL is accepted but not crawled yet (Phase 2). 3D
-          visualization is a later milestone.
+          The backend fetches the article, extracts main text with trafilatura,
+          and ranks keywords with TF-IDF. Results appear as JSON below; a 3D
+          word cloud is a later milestone.
         </p>
       </header>
 
