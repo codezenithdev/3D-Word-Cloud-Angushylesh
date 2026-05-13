@@ -1,5 +1,6 @@
 import { useCallback, useId, useRef, useState } from "react";
 import type { CSSProperties } from "react";
+import WordCloud3D from "./components/WordCloud3D";
 
 const API_BASE = import.meta.env.VITE_API_URL ?? "http://127.0.0.1:8000";
 
@@ -126,8 +127,8 @@ export default function App() {
       <header className="header">
         <h1>3D Word Cloud</h1>
         <p className="subtitle">
-          Paste a URL or pick a sample. The API returns ranked keywords; a 3D
-          scene comes in the next milestone.
+          Paste a URL or pick a sample. Orbit the 3D cloud (drag to rotate,
+          scroll to zoom); it spins slowly on its own.
         </p>
       </header>
 
@@ -222,8 +223,18 @@ export default function App() {
               </p>
             </div>
 
+            <div className="canvas-section" aria-label="Three-dimensional word cloud">
+              <h2 className="canvas-heading">3D word cloud</h2>
+              <p className="canvas-hint">
+                Drag to orbit · scroll to zoom · top {Math.min(52, result.words.length)} terms
+              </p>
+              <div className="canvas-wrap">
+                <WordCloud3D words={result.words} maxWords={52} />
+              </div>
+            </div>
+
             <div className="result-card">
-              <h2 className="result-heading">Keywords</h2>
+              <h2 className="result-heading">Keywords (2D)</h2>
               <ul className="keyword-cloud" aria-label="Keywords by weight">
                 {result.words.map(({ word, weight }) => (
                   <li
@@ -260,8 +271,9 @@ export default function App() {
           </>
         ) : (
           <p className="placeholder">
-            Run an analysis to see the article title, weighted keywords, and
-            optional raw <code>POST /analyze</code> JSON.
+            Run an analysis to see the article title, an interactive 3D word
+            cloud, 2D keyword chips, and optional raw <code>POST /analyze</code>{" "}
+            JSON.
           </p>
         )}
       </section>

@@ -300,6 +300,35 @@ body {
   margin: 0;
 }
 
+.canvas-section {
+  margin: 1rem 0 1.25rem;
+}
+
+.canvas-heading {
+  margin: 0 0 0.2rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #7d8b99;
+}
+
+.canvas-hint {
+  margin: 0 0 0.5rem;
+  font-size: 0.82rem;
+  color: #8b99a8;
+}
+
+.canvas-wrap {
+  height: min(52vh, 460px);
+  min-height: 260px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #2a3542;
+  background: #05080c;
+  touch-action: none;
+}
+
 code {
   font-size: 0.9em;
   color: #93c5fd;
