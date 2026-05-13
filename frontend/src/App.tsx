@@ -9,23 +9,23 @@ type Sample = { url: string; label: string };
 const SAMPLES: Sample[] = [
   {
     url: "https://en.wikipedia.org/wiki/Word_cloud",
-    label: "Wikipedia — Word cloud",
+    label: "Wikipedia - Word cloud",
   },
   {
     url: "https://en.wikipedia.org/wiki/Natural_language_processing",
-    label: "Wikipedia — NLP",
+    label: "Wikipedia - NLP",
   },
   {
-    url: "https://github.blog/news-insights/the-library/open-source-license-basics-for-developers/",
-    label: "GitHub Blog — Licenses",
+    url: "https://docs.github.com/en/rest/licenses/licenses?apiVersion=2026-03-10",
+    label: "GitHub Blog - Licenses",
   },
   {
-    url: "https://www.bbc.com/news/science-environment-68219673",
-    label: "BBC — Science",
+    url: "https://www.bbc.com/news/articles/cd6p26y6d8vo",
+    label: "BBC - Science",
   },
   {
     url: "https://en.wikipedia.org/wiki/FastAPI",
-    label: "Wikipedia — FastAPI",
+    label: "Wikipedia - FastAPI",
   },
 ];
 
