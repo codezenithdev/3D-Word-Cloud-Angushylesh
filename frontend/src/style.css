@@ -1,0 +1,134 @@
+:root {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  line-height: 1.5;
+  color: #e8ecf1;
+  background: #0f1419;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.header h1 {
+  margin: 0 0 0.25rem;
+  font-size: 1.75rem;
+}
+
+.subtitle {
+  margin: 0;
+  color: #9aa7b2;
+  font-size: 0.95rem;
+}
+
+.controls {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.url-row {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.url-row input {
+  flex: 1 1 240px;
+  min-width: 0;
+  padding: 0.5rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid #2a3542;
+  background: #151c24;
+  color: inherit;
+}
+
+.url-row button {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background: #3b82f6;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.url-row button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.samples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #9aa7b2;
+}
+
+.chip {
+  border: 1px solid #2a3542;
+  background: #151c24;
+  color: #c8d4e0;
+  border-radius: 999px;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.chip:hover {
+  border-color: #3b82f6;
+}
+
+.banner {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+}
+
+.banner.error {
+  background: #3a1f24;
+  border: 1px solid #b45353;
+  color: #fecaca;
+}
+
+.output {
+  margin-top: 1.5rem;
+}
+
+.output h2 {
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem;
+}
+
+.json {
+  margin: 0;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #151c24;
+  border: 1px solid #2a3542;
+  overflow: auto;
+  max-height: 60vh;
+  font-size: 0.85rem;
+}
+
+.placeholder {
+  color: #9aa7b2;
+  margin: 0;
+}
+
+code {
+  font-size: 0.9em;
+  color: #93c5fd;
+}
